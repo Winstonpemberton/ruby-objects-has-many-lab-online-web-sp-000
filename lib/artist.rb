@@ -1,5 +1,6 @@
 class Artist
   attr_accessor :name
+  @@list = 0
 
   def initialize(name)
     @name = name
@@ -20,7 +21,7 @@ class Artist
     song.artist = self
   end
 
-  def song_count
+  def self.song_count
     Song.all.select do |song|
       song
     end
