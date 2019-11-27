@@ -6,7 +6,7 @@ class Artist
   end
 
   def songs
-    @@all.length
+    Song.all.length
   end
 
 
