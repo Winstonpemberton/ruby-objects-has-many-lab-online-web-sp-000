@@ -5,5 +5,9 @@ class Artist
     @name = name
   end
 
+  def songs
+    @@all.length
+  end
+
 
 end
