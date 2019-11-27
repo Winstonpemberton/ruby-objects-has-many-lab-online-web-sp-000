@@ -22,9 +22,7 @@ class Artist
   end
 
   def self.song_count
-    Song.all.select do |song|
-      song
-    end
+    Song.all.length
   end
 
 
