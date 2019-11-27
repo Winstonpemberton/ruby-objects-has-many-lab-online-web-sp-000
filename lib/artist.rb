@@ -18,8 +18,15 @@ class Artist
   def add_song_by_name(name)
     song = Song.new(name)
     song.artist = self
-
   end
+
+  def song_count
+    Song.all.select do |song|
+      song
+    end
+  end
+
+
 
 
 end
